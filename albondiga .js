@@ -1,15 +1,14 @@
 function pabaselbondiga() {
-    let div = document.createElement('div');
-    div.className = "bolitas";
-    return div;
-}
+    let container = document.createElement('div');
+    container.className = "bolitas-container"; 
 
-function agregarBolitas(cantidad) {
-    let container = document.querySelector('.bolitas-container');
-    for (let i = 0; i < cantidad; i++) {
-        container.appendChild(pabaselbondiga());
+    for (let i = 0; i < 3; i++) {
+        let div = document.createElement('div');
+        div.className = "bolitas";
+        container.appendChild(div);
     }
+
+    return container;
 }
 
 export {pabaselbondiga};
-export {agregarBolitas};

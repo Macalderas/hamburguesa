@@ -4,6 +4,7 @@
     align-items: center;
     gap: 0; 
     margin: auto;
+
   }
   
   .pan1 {
@@ -32,11 +33,11 @@
   
   .cebolla {
     background-color: #9370db; 
-    width: 120px;
-    height: 10px;
-    border-radius: 5px;
-    margin: 0;
+    width: 100px;
+    height: 15px;
+    border-radius: 10px;
     position: relative;
+    margin: 0;
   }
   
   .cebolla::before, .cebolla::after {
@@ -44,34 +45,8 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #e0e0e0;  .cebolla {
-        background-color: #9370db; 
-        width: 120px;
-        height: 10px;
-        border-radius: 5px;
-        margin: 0;
-        position: relative;
-      }
-      
-      .cebolla::before, .cebolla::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: #e0e0e0; 
-        height: 8px;
-        border-radius: 50%;
-      }
-      
-      .cebolla::before {
-        left: 30%;
-      }
-      
-      .cebolla::after {
-        right: 30%;
-      } 
-
-    
+    background-color: #e0e0e0; 
+    width: 8px;
     height: 8px;
     border-radius: 50%;
   }
@@ -85,18 +60,18 @@
   }
   
   .bolitas-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    display: flex;
+    flex-direction: row; 
+    justify-content: center; 
     gap: 10px; 
-    justify-content: center;
-  }
-  
-  .bolitas {
+}
+
+.bolitas {
     background-color: #8b4513;
     width: 30px;
     height: 30px;
-    border-radius: 50%;
-  }
+    border-radius: 100%; 
+}
 
   .lechuga {
     background-color: #32cd32; 
